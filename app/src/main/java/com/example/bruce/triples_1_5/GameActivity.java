@@ -69,7 +69,7 @@ public class GameActivity extends AppCompatActivity {
         for(int i = numCardsOnBoard; i < MAX_IMAGES; i++)
             mImageArray[i].setVisibility(View.GONE);
         for(int imageIndex = 0; imageIndex < numCardsOnBoard; imageIndex++){
-            mImageArray[imageIndex].setImageResource(game.dealTopCard(-1).getImageID());
+            mImageArray[imageIndex].setImageResource(game.dealBoard().getImageID());
         }
         if(!game.playIsPossible()) gameOver();
         updateCardsRemaining();
