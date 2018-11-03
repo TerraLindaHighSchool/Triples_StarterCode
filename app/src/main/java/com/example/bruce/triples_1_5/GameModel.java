@@ -1,8 +1,6 @@
 package com.example.bruce.triples_1_5;
 
-
 import android.content.Context;
-
 import java.util.ArrayList;
 
 public class GameModel {
@@ -16,34 +14,50 @@ public class GameModel {
         // to be implemented
     }
 
+/*************************************************
+ * Getters and Setters
+ *************************************************/
+
+    // to be implemented
+
     /*************************************************
-     * Getters and Setters
+     * Methods that place cards to board
+     *************************************************/
+    protected void addCardToBoard(){
+        // to be implemented
+    }
+
+    protected void replaceCardOnBoard(int index){
+        // to be implemented
+    }
+
+    /*************************************************
+     * Methods that keep track of selected cards
      *************************************************/
 
-     // to be implemented
+    protected void addSelectedCard(int cardIndex){
+        // to be implemented
+    }
 
+    protected void removeSelectedCard(int cardIndex){
+        // to be implemented
+    }
+
+    protected void resetSelectedCards(){
+        // to be implemented
+    }
 
     /*************************************************
-     * Concrete Methods
+     * Scoring
      *************************************************/
-    protected void dealTopCard(int index){
+    protected int updateScore() {
         // to be implemented
+        return -1; // temporary placeholder until implementation
     }
 
-    /************* to be implemented *********
-    *
-    protected Card dealBoard(){
-    }
-    *
-    ****************************************/
-
-    protected void listSelectedCards(boolean isSelected, int cardIndex){
-        // to be implemented
-    }
-
-    protected void removeSelectedCard(int index){
-        // to be implemented
-    }
+    /*************************************************
+     * Methods that determine play
+     *************************************************/
 
     protected boolean isTriple(int firstCard, int secondCard, int thirdCard){
         // to be implemented
@@ -55,11 +69,6 @@ public class GameModel {
         return true;  // temporary placeholder until implementation
     }
 
-    protected int updateScore() {
-        // to be implemented
-        return -1; // temporary placeholder until implementation
-    }
-
     protected String getGameOverMessage(Context context){
         String message = context.getString(R.string.game_over);
         if(mTriplesRemaining > 0)
@@ -67,5 +76,7 @@ public class GameModel {
         return message;
     }
 }
+
+
 
 
