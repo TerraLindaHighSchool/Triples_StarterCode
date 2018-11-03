@@ -35,15 +35,15 @@ public class GameModel {
      * Methods that keep track of selected cards
      *************************************************/
 
-    protected void addSelectedCard(int cardIndex){
+    protected void addSelectedCardIndex(int cardIndex){
         // to be implemented
     }
 
-    protected void removeSelectedCard(int cardIndex){
+    protected void removeSelectedCardIndex(int cardIndex){
         // to be implemented
     }
 
-    protected void resetSelectedCards(){
+    protected void resetSelectedCardIndices(){
         // to be implemented
     }
 
